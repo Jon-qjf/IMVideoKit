@@ -1,0 +1,64 @@
+//
+//  VideoCallUtils.swift
+//  trtcScenesDemo
+//
+//  Created by xcoderliu on 12/10/19.
+//  Copyright © 2019 xcoderliu. All rights reserved.
+//
+
+import UIKit
+
+
+@objc open class VideoCallUtils: NSObject {
+    @objc public static let shared = VideoCallUtils()
+    private override init() {}
+    
+    @objc open func data2CallModel(data: Data) -> VideoCallModel? {
+        do {
+            let decoder = JSONDecoder()
+            let model = try decoder.decode(VideoCallModel.self, from: data)
+            return model
+        } catch let err {
+            debugPrint("call dataToModel failed: \(err)")
+            return nil
+        }
+    }
+    
+    @objc open func callModel2Data(model: VideoCallModel) -> Data? {
+        do {
+            let encoder = JSONEncoder()
+            let json = try encoder.encode(model)
+            debugPrint("🏷🏷🏷🏷🏷🏷🏷🏷🏷: \(json)")
+            return json
+        } catch let err {
+            debugPrint("call callModel2Data failed: \(err)")
+            return nil
+        }
+    }
+    
+    @objc public func randomStr(len: Int) -> String {
+        let randomSrc = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        var ranStr = ""
+        for _ in 0..<len {
+            let index = Int(arc4random_uniform(UInt32(randomSrc.count)))
+            ranStr.append(randomSrc[randomSrc.index(randomSrc.startIndex, offsetBy: index)])
+        }
+        return ranStr
+    }
+    
+    @objc public func curUserId() -> String {
+        if let user = TIMManager.sharedInstance()?.getLoginUser(), user.count > 0 {
+            return user
+        } else {
+            return randomStr(len: 5)
+        }
+    }
+    
+    @objc public func generateCallID() -> String {
+        return "\(TIMManager.sharedInstance()?.getVersion() ?? "0.0.1")-\(curUserId())-\(randomStr(len: 32))"
+    }
+    
+    @objc public func generateRoomID() -> UInt32 {
+       return UInt32.random(in: 0...(UInt32.max / 2 - 1))
+    }
+}

@@ -22,7 +22,13 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		C3EB67C3639B3254DC212F77 /* Pods_IMVideoKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0932BAEE8EF7C6F9780F94E1 /* Pods_IMVideoKit_Example.framework */; };
+		CEBEC129254972360031C22D /* none.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEC128254972350031C22D /* none.swift */; };
+		CEBEC496254989020031C22D /* Pods_IMVideoKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBEC3E9254984C10031C22D /* Pods_IMVideoKit_Example.framework */; };
+		CEBEC497254989020031C22D /* Pods_IMVideoKit_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBEC3E9254984C10031C22D /* Pods_IMVideoKit_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEBEC562254A6D110031C22D /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBEC55A254A6CF70031C22D /* libc++.1.tbd */; };
+		CEBEC564254A6D160031C22D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBEC55B254A6CFE0031C22D /* libc++.tbd */; };
+		CEBEC566254A6D1A0031C22D /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBEC55C254A6D050031C22D /* libc++abi.tbd */; };
+		CED65539254A906900EF69CF /* IMVC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED65537254A906900EF69CF /* IMVC.cpp */; };
 		EF9980F9459EFC3FBCAF25F4 /* Pods_IMVideoKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A089DC9E34935A8CDE2BFC3 /* Pods_IMVideoKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,11 +42,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CEBEC498254989020031C22D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEBEC497254989020031C22D /* Pods_IMVideoKit_Example.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0932BAEE8EF7C6F9780F94E1 /* Pods_IMVideoKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMVideoKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16006BF047D476456922D265 /* Pods-IMVideoKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMVideoKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-IMVideoKit_Tests/Pods-IMVideoKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1A089DC9E34935A8CDE2BFC3 /* Pods_IMVideoKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMVideoKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DA8CB293FED1D9AC32A81AD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3DA8CB293FED1D9AC32A81AD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4A49A5DDD99C1B38085E44D9 /* Pods-IMVideoKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMVideoKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-IMVideoKit_Tests/Pods-IMVideoKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5FC1020EE8627E29540C1989 /* Pods-IMVideoKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMVideoKit_Example.release.xcconfig"; path = "Target Support Files/Pods-IMVideoKit_Example/Pods-IMVideoKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* IMVideoKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMVideoKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,10 +82,19 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6358B7662CCFEC7255515BC1 /* IMVideoKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = IMVideoKit.podspec; path = ../IMVideoKit.podspec; sourceTree = "<group>"; };
-		681E9E094B1B6C0764BCFEA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6358B7662CCFEC7255515BC1 /* IMVideoKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IMVideoKit.podspec; path = ../IMVideoKit.podspec; sourceTree = "<group>"; };
+		681E9E094B1B6C0764BCFEA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEBEC127254972350031C22D /* IMVideoKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMVideoKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEBEC128254972350031C22D /* none.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = none.swift; sourceTree = "<group>"; };
+		CEBEC3E9254984C10031C22D /* Pods_IMVideoKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_IMVideoKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBEC55A254A6CF70031C22D /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		CEBEC55B254A6CFE0031C22D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		CEBEC55C254A6D050031C22D /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		CEBEC55D254A6D090031C22D /* IMVideoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IMVideoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED65537254A906900EF69CF /* IMVC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IMVC.cpp; sourceTree = "<group>"; };
+		CED65538254A906900EF69CF /* IMVC.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IMVC.hpp; sourceTree = "<group>"; };
 		ED4E21AEF6CD38FC5A93FFC4 /* Pods-IMVideoKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMVideoKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-IMVideoKit_Example/Pods-IMVideoKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,10 +103,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBEC564254A6D160031C22D /* libc++.tbd in Frameworks */,
+				CEBEC566254A6D1A0031C22D /* libc++abi.tbd in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				CEBEC496254989020031C22D /* Pods_IMVideoKit_Example.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				C3EB67C3639B3254DC212F77 /* Pods_IMVideoKit_Example.framework in Frameworks */,
+				CEBEC562254A6D110031C22D /* libc++.1.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +151,11 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEBEC55D254A6D090031C22D /* IMVideoKit.framework */,
+				CEBEC55C254A6D050031C22D /* libc++abi.tbd */,
+				CEBEC55B254A6CFE0031C22D /* libc++.tbd */,
+				CEBEC55A254A6CF70031C22D /* libc++.1.tbd */,
+				CEBEC3E9254984C10031C22D /* Pods_IMVideoKit_Example.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -134,12 +171,16 @@
 			children = (
 				6003F59C195388D20070C39A /* IMVAppDelegate.h */,
 				6003F59D195388D20070C39A /* IMVAppDelegate.m */,
+				CED65537254A906900EF69CF /* IMVC.cpp */,
+				CED65538254A906900EF69CF /* IMVC.hpp */,
+				CEBEC128254972350031C22D /* none.swift */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* IMVViewController.h */,
 				6003F5A6195388D20070C39A /* IMVViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				CEBEC127254972350031C22D /* IMVideoKit_Example-Bridging-Header.h */,
 			);
 			name = "Example for IMVideoKit";
 			path = IMVideoKit;
@@ -193,7 +234,6 @@
 				16006BF047D476456922D265 /* Pods-IMVideoKit_Tests.debug.xcconfig */,
 				4A49A5DDD99C1B38085E44D9 /* Pods-IMVideoKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +249,8 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				C7F4EF2A303B1A41525388CC /* [CP] Embed Pods Frameworks */,
+				BD7DE8ABDE1564CE0AAE88A3 /* [CP] Copy Pods Resources */,
+				CEBEC498254989020031C22D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +290,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = qjf;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = VBS27GL3DW;
+						LastSwiftMigration = 1200;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +304,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -339,6 +386,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BD7DE8ABDE1564CE0AAE88A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMVideoKit_Example/Pods-IMVideoKit_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/IMVideoKit/IMVideoKitImages.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IMVideoKitImages.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IMVideoKit_Example/Pods-IMVideoKit_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C7F4EF2A303B1A41525388CC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,11 +411,27 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IMVideoKit_Example/Pods-IMVideoKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IMVideoKit/IMVideoKit.framework",
+				"${PODS_ROOT}/../../IMVideoKit/Framework/ImSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/ISVImageScrollView/ISVImageScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/MMLayout/MMLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
+				"${BUILT_PRODUCTS_DIR}/YBImageBrowser/YBImageBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IMVideoKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISVImageScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBImageBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,8 +446,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* IMVAppDelegate.m in Sources */,
+				CEBEC129254972360031C22D /* none.swift in Sources */,
 				6003F5A7195388D20070C39A /* IMVViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				CED65539254A906900EF69CF /* IMVC.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -437,6 +521,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -449,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -476,13 +562,14 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -494,13 +581,76 @@
 			baseConfigurationReference = ED4E21AEF6CD38FC5A93FFC4 /* Pods-IMVideoKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VBS27GL3DW;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IMVideoKit/IMVideoKit-Prefix.pch";
 				INFOPLIST_FILE = "IMVideoKit/IMVideoKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"resolv\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IMVideoKit\"",
+					"-framework",
+					"\"ISVImageScrollView\"",
+					"-framework",
+					"\"ImSDK\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MMLayout\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"ReactiveObjC\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"TXLiteAVSDK_TRTC\"",
+					"-framework",
+					"\"TZImagePickerController\"",
+					"-framework",
+					"\"Toast\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"YBImageBrowser\"",
+					"-framework",
+					"\"YYImage\"",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IMVideoKit/IMVideoKit_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -510,13 +660,75 @@
 			baseConfigurationReference = 5FC1020EE8627E29540C1989 /* Pods-IMVideoKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VBS27GL3DW;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IMVideoKit/IMVideoKit-Prefix.pch";
 				INFOPLIST_FILE = "IMVideoKit/IMVideoKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"resolv\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IMVideoKit\"",
+					"-framework",
+					"\"ISVImageScrollView\"",
+					"-framework",
+					"\"ImSDK\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MMLayout\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"ReactiveObjC\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"TXLiteAVSDK_TRTC\"",
+					"-framework",
+					"\"TZImagePickerController\"",
+					"-framework",
+					"\"Toast\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"YBImageBrowser\"",
+					"-framework",
+					"\"YYImage\"",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IMVideoKit/IMVideoKit_Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -525,6 +737,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16006BF047D476456922D265 /* Pods-IMVideoKit_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -550,6 +763,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A49A5DDD99C1B38085E44D9 /* Pods-IMVideoKit_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
