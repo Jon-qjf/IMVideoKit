@@ -9,7 +9,7 @@
 #import "VideoCallUserModel.h"
 //#import "VideoCallViewController.h"
 //#import "TUIkitModule-Swift.h"
-#import <IMVideoKit/IMVideoKit-Swift.h>
+//#import <IMVideoKit/IMVideoKit-Swift.h>
 
 @implementation VideoCallUserModel
 
@@ -22,8 +22,8 @@
 }
 -(void)configModel:(VideoCallUserModel *)model{
     BOOL noModel = model.userId.length == 0;
-    if (!noModel ) {
-        if ([model.userId isEqualToString:[VideoCallUtils shared].curUserId]) {
+//    if (!noModel ) {
+//        if ([model.userId isEqualToString:[VideoCallUtils shared].curUserId]) {
 //            VideoRenderView *render = [VideoCallViewController getRenderView:model.userId];
 //            if(render) {
 //                if (render.superview != self ){
@@ -37,7 +37,7 @@
 //            } else {
 //                NSLog("error");
 //            }
-        }
-    }
+//        }
+//    }
 }
 @end

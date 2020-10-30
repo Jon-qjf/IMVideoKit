@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'IMVideoKit'
-s.version          = '1.3'
+s.version          = '1.4'
 s.summary          = 'A short description of IMVideoKit.'
 
 # This description is used to generate tags and improve search results.
