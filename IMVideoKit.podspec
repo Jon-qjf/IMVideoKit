@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'IMVideoKit'
-s.version          = '1.0'
+s.version          = '1.2'
 s.summary          = 'A short description of IMVideoKit.'
 
 # This description is used to generate tags and improve search results.
@@ -41,9 +41,11 @@ s.resource_bundles = {
 }
 #获取自己打包的framework库
 #指定文件位置 引用framework
-s.ios.vendored_frameworks = 'IMVideoKit/Framework/*.framework'
+s.vendored_frameworks = 'IMVideoKit/Framework/*.framework'
+s.preserve_paths = 'IMVideoKit/Framework/*.framework'
+
 #引用framework
-s.vendored_frameworks = 'ImSDK.framework'
+#s.vendored_frameworks = 'ImSDK.framework'
 #引用本地的第三方静态库
 s.vendored_libraries = 'IMVideoKit/Classes/Third/voiceConvert/**/*.a'
 #设置私有文件,不对外暴露,不会自动被umbrella引用,wav文件是c++的音频处理文件,需要引用两个.a库.libopencore-amrnb.a和libopencore-amrwb.a.如果对外引用的话就需要在主工程里添加这两个库才能使用
@@ -65,7 +67,8 @@ s.libraries = 'stdc++','c++'
   s.requires_arc = true
 
 
-s.frameworks   = 'AVFoundation', 'Foundation','UIKit'
+
+#s.frameworks   = 'AVFoundation', 'Foundation','UIKit'
 s.dependency 'MMLayout', '~> 0.2.0'
 s.dependency 'SDWebImage'
 s.dependency 'ReactiveObjC'
