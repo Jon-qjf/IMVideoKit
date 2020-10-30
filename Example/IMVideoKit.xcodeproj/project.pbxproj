@@ -580,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED4E21AEF6CD38FC5A93FFC4 /* Pods-IMVideoKit_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
@@ -590,6 +591,19 @@
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IMVideoKit/IMVideoKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IMVideoKit/IMVideoKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ISVImageScrollView/ISVImageScrollView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MMLayout/MMLayout.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC/ReactiveObjC.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/TZImagePickerController/TZImagePickerController.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast/Toast.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YBImageBrowser/YBImageBrowser.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYImage/YYImage.framework/Headers\"",
+					"${PODS_ROOT}/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC.framework/Headers/",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "IMVideoKit/IMVideoKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -659,6 +673,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5FC1020EE8627E29540C1989 /* Pods-IMVideoKit_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
@@ -669,6 +684,19 @@
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IMVideoKit/IMVideoKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IMVideoKit/IMVideoKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ISVImageScrollView/ISVImageScrollView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MMLayout/MMLayout.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC/ReactiveObjC.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/TZImagePickerController/TZImagePickerController.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast/Toast.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YBImageBrowser/YBImageBrowser.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYImage/YYImage.framework/Headers\"",
+					"${PODS_ROOT}/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC.framework/Headers/",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "IMVideoKit/IMVideoKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
