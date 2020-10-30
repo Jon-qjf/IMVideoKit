@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'IMVideoKit'
-s.version          = '1.2'
+s.version          = '1.3'
 s.summary          = 'A short description of IMVideoKit.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,6 @@ s.ios.deployment_target = '8.0'
 s.source_files = 'IMVideoKit/Classes/**/*'
 #支持swift并指定版本
 s.swift_version = '5.0'
-#s.libraries = "c++"
 #支持framework
 s.static_framework = true
 
@@ -56,14 +55,14 @@ s.private_header_files = 'IMVideoKit/Classes/Third/voiceConvert/amrwapper/*.h'
 s.xcconfig     = { 'VALID_ARCHS' => 'armv7 arm64 x86_64', }
 #支持的系统静态库
 s.libraries = 'stdc++','c++'
-  s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
-  }
-  s.user_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
-  }
+#  s.pod_target_xcconfig = {
+#    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+#    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
+#  }
+#  s.user_target_xcconfig = {
+#      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+#      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
+#  }
   s.requires_arc = true
 
 
